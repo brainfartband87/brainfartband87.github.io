@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero with Marching Images (Tailwind)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="m-0 font-sans">
+    <section
+      class="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center"
+      style="background-image: url('assets/paper.png')"
+    >
+      <div class="relative">
+        <img src="assets/main-cover.png" class="w-[60vh]" />
+        <div
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center"
+        >
+          <div class="text-center mb-20 w-full">
+            <p class="text-5xl">Bravo-Foxtrot-101</p>
+            <p class="text-2xl">"...will not break you up"</p>
+          </div>
+          <div class="mb-2">
+            <wired-button elevation="2" class="bg-[#f08c00]"
+              ><span class="text-2xl">Now Streaming</span></wired-button
+            >
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-0 bottom-0 right-5 w-20 overflow-hidden">
+        <div
+          class="flex flex-col gap-5 [animation:floatUp_100s_linear_infinite]"
+        >
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+          <img
+            src="assets/plane.png"
+            alt="plane"
+            class="w-20 h-20 object-cover rounded-lg shrink-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen bg-white p-10">
+      <h2 class="text-2xl font-semibold mb-4">Main Content</h2>
+      <p class="mb-4">
+        Here's the content after scrolling past the hero section. You can place
+        your text, images, or whatever here.
+      </p>
+      <p>Keep scrolling for more sections...</p>
+    </section>
+  </body>
+
+  <script type="module" src="https://unpkg.com/wired-elements?module"></script>
+</html>
