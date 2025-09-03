@@ -17,10 +17,10 @@
   </head>
   <body class="m-0 font-sans">
     <section
-      class="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center"
+      class="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center -mt-4"
       style="background-image: url('assets/paper.png')"
     >
-      <div class="relative">
+      <div class="relative z-10">
         <img
           src="assets/main-cover.svg"
           class="w-90 md:w-[60vh] -mt-20 md:mt-40"
@@ -30,11 +30,11 @@
         >
           <div class="text-center mb-14 w-full">
             <p class="text-3xl md:text-5xl font-monocode">Bravo-Foxtrot-101</p>
-            <p class="text-xl md:text-2xl font-sans">
+            <p class="text-2xl md:text-2xl font-sans">
               "...will not break me up"
             </p>
           </div>
-          <div class="mb-2">
+          <div class="mb-0">
             <a href="#playlist">
               <wired-button elevation="2" class="bg-primary"
                 ><span class="text-2xl">Now Streaming</span></wired-button
@@ -43,96 +43,47 @@
           </div>
         </div>
       </div>
-      <div
-        class="invisible md:visible absolute top-0 bottom-0 right-5 w-20 overflow-hidden"
-      >
-        <div
-          class="flex flex-col gap-5 [animation:floatUp_100s_linear_infinite]"
-        >
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-          <img
-            src="assets/plane.png"
-            alt="plane"
-            class="w-20 h-20 object-cover rounded-lg shrink-0"
-          />
-        </div>
+      <div class="absolute top-0 right-5 space-y-5 z-0">
+        <img
+          src="assets/plane.png"
+          alt="plane"
+          class="w-8 h-8 md:w-20 md:h-20 object-cover [animation:floatUp_20s_linear_infinite] opacity-50"
+        />
       </div>
     </section>
-    <section class="relative -mt-25 -mb-20 z-20">
+    <section class="relative -mt-40 md:-mt-25 -mb-20 z-20">
       <img
-        src="assets/teared-paper-orange.webp"
-        class="w-full h-45 object-cover md:object-fill"
+        src="assets/teared-paper-orange-full.webp"
+        class="w-full h-[70vh] md:h-[60vh] object-cover md:object-fill"
+        alt="background"
       />
+      <div
+        class="absolute inset-0 flex items-center justify-center text-center px-4"
+      >
+        <div class="w-full md:w-[60vw]">
+          <p class="text-white text-xl md:text-2xl">
+            <span class="font-bold">BRAINFART</span> PRESENT
+          </p>
+          <div class="text-sm md:text-lg mt-5 text-white">
+            <p>Brainfart berterimakasih kepada:</p>
+            <p>
+              Tuhan dan semesta, kami berhasil lepas landas untuk album yang
+              pertama. Juga tidak lupa semua keluarga serta teman-teman terdekat
+              yang sudah mendukung dan memberikan inspirasi. Sebelum album ini
+              kami telah merilis single Sintasium pada tahun 2024. Pada album
+              <span class="font-monocode">Bravo-Foxtrot-101</span> kami mencoba
+              untuk menuangkan semua ide yang kami miliki ke dalam alunan nada
+              dan lirik yang tidak terbatas pada salah satu genre saja. Semoga
+              berkenan.
+            </p>
+            <div class="flex justify-center">
+              <wired-divider class="py-8 w-50 text-center"></wired-divider>
+            </div>
+            <p>Semua lagu dan aransemen oleh Brainfart.</p>
+            <p>Recording, mixing dan mastering di Helldean Records.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section
       class="relative overflow-hidden bg-cover bg-center px-5 sm:px-10 lg:px-20 py-20 sm:py-20"
@@ -166,9 +117,9 @@
         class="w-full h-45 object-cover md:object-fill"
       />
     </section>
-    <section class="h-[50vh]">
+    <section class="h-[50vh] -mb-40 md:mb-0">
       <div class="flex justify-center mt-10">
-        <img src="assets/angel-devil.png" class="w-[450px]" />
+        <img src="assets/angel-devil.png" class="w-[280px] md:w-[450px]" />
       </div>
     </section>
     <section class="relative z-20 -my-10">
@@ -187,30 +138,34 @@
         <div
           class="order-3 md:order-1 text-right space-y-2 mt-10 md:mt-0 -mr-20 md:mr-0"
         >
-          <wired-button class="text-xl md:text-2xl block">Pilot</wired-button>
-          <wired-button class="text-xl md:text-2xl block"
-            >Hara-fun</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Pilot</span></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            >Emergency Dream</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Hara-fun</span></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            >Badut Cadangan</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Emergency Dream</span></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            ><span class="line-through">Rahwana</span> Lost</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Badut Cadangan</span></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            >Setan~Malaikat</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case"
+              ><span class="line-through">Rahwana</span> Lost</span
+            ></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            >Reinkarnasi</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Setan~Malaikat</span></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            >Strong to Survive</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Reinkarnasi</span></wired-button
           >
-          <wired-button class="text-xl md:text-2xl block"
-            >Sintasium</wired-button
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Strong to Survive</span></wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block font-monocode"
+            ><span class="normal-case">Sintasium</span></wired-button
           >
         </div>
 
@@ -224,28 +179,59 @@
           <wired-button
             class="text-2xl md:text-4xl block bg-primary"
             elevation="3"
+            disabled
             >Now Streaming</wired-button
           >
           <wired-button class="text-xl md:text-3xl block" elevation="2"
-            >Spotify</wired-button
+            ><span class="normal-case">Spotify</span></wired-button
           >
           <wired-button class="text-xl md:text-3xl block" elevation="2"
-            >Youtube Music</wired-button
+            ><span class="normal-case">Youtube Music</span></wired-button
           >
           <wired-button class="text-xl md:text-3xl block" elevation="2"
-            >Apple Music</wired-button
+            ><span class="normal-case">Apple Music</span></wired-button
           >
         </div>
       </div>
     </section>
-    <section class="relative z-20 -my-10">
+    <section class="relative z-20 -mb-10">
       <img
         src="assets/teared-paper-orange-bottom.png"
         class="w-full object-cover md:object-fill h-30 md:h-auto"
       />
     </section>
-    <section class="z-10 bg-primary pt-20 pb-40">
-      thanks text, logo, record logo, staring, email, contact person
+    <section class="z-10 bg-primary pt-5 pb-10">
+      <div class="flex justify-center mb-10">
+        <div class="w-[90vw] flex flex-col space-y-6">
+          <div class="text-center font-monocode">
+            <div>Starring</div>
+            <p>AGJ | DXC</p>
+          </div>
+
+          <div class="text-center flex flex-col space-y-0">
+            <div>em: brainfartband87@gmail.com</div>
+            <div>yt: brainfartband</div>
+            <div>ig: brainfart_band</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex space-x-5">
+          <div class="flex items-center space-x-2">
+            [LOGO]<span>BRAINFART</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex space-x-5">
+          <div class="flex items-center space-x-2">
+            <img src="assets/hd1.jpeg" class="h-7" /><span
+              >HELLDEAN RECORDS</span
+            >
+          </div>
+        </div>
+      </div>
+      <p class="mt-20 text-center">2025</p>
     </section>
   </body>
 

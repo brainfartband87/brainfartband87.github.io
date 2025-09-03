@@ -15,11 +15,11 @@
 
 @keyframes floatUp {
   0% {
-    transform: translateY(0);
-  }
+    transform: translateY(90vh);
+  } /* start at bottom of viewport */
   100% {
-    transform: translateY(-50%);
-  }
+    transform: translateY(-100%);
+  } /* end above top slightly */
 }
 
 html {
