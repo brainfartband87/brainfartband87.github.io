@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Monocode";
+  src: url("/fonts/monocode/Monocode-Regular-V01.02b.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @keyframes floatUp {
   0% {
     transform: translateY(0);
@@ -5,4 +20,8 @@
   100% {
     transform: translateY(-50%);
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

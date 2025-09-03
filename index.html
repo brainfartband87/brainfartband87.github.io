@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero with Marching Images (Tailwind)</title>
+    <title>Brainfart - Bravo-Foxtrot-101</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="styles.css" rel="stylesheet" />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-monocode: "Monocode", monospace;
+        --color-primary: #f08c00;
+        --color-secondary: #e03131;
+        --font-sans: "Open Sans", sans;
+      }
+    </style>
   </head>
   <body class="m-0 font-sans">
     <section
@@ -13,22 +21,31 @@
       style="background-image: url('assets/paper.png')"
     >
       <div class="relative">
-        <img src="assets/main-cover.png" class="w-[60vh]" />
+        <img
+          src="assets/main-cover.svg"
+          class="w-90 md:w-[60vh] -mt-20 md:mt-40"
+        />
         <div
-          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center"
+          class="absolute -bottom-0 md:bottom-45 left-1/2 -translate-x-1/2 w-full text-center"
         >
-          <div class="text-center mb-20 w-full">
-            <p class="text-5xl">Bravo-Foxtrot-101</p>
-            <p class="text-2xl">"...will not break you up"</p>
+          <div class="text-center mb-14 w-full">
+            <p class="text-3xl md:text-5xl font-monocode">Bravo-Foxtrot-101</p>
+            <p class="text-xl md:text-2xl font-sans">
+              "...will not break me up"
+            </p>
           </div>
           <div class="mb-2">
-            <wired-button elevation="2" class="bg-[#f08c00]"
-              ><span class="text-2xl">Now Streaming</span></wired-button
-            >
+            <a href="#playlist">
+              <wired-button elevation="2" class="bg-primary"
+                ><span class="text-2xl">Now Streaming</span></wired-button
+              >
+            </a>
           </div>
         </div>
       </div>
-      <div class="absolute top-0 bottom-0 right-5 w-20 overflow-hidden">
+      <div
+        class="invisible md:visible absolute top-0 bottom-0 right-5 w-20 overflow-hidden"
+      >
         <div
           class="flex flex-col gap-5 [animation:floatUp_100s_linear_infinite]"
         >
@@ -111,14 +128,124 @@
         </div>
       </div>
     </section>
+    <section class="relative -mt-25 -mb-20 z-20">
+      <img
+        src="assets/teared-paper-orange.webp"
+        class="w-full h-45 object-cover md:object-fill"
+      />
+    </section>
+    <section
+      class="relative overflow-hidden bg-cover bg-center px-5 sm:px-10 lg:px-20 py-20 sm:py-20"
+      style="background-image: url('assets/paper.png')"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-end items-center gap-2 md:gap-0"
+      >
+        <div
+          class="h-full md:w-1/2 lg:w-[45%] flex justify-center md:justify-end"
+        >
+          <img
+            src="assets/sketch-hand-work.svg"
+            class="w-[150%] md:w-[120%] max-w-none h-auto object-contain -mr-30 md:-mr-25"
+            alt="Sketch Hand Work"
+          />
+        </div>
 
-    <section class="min-h-screen bg-white p-10">
-      <h2 class="text-2xl font-semibold mb-4">Main Content</h2>
-      <p class="mb-4">
-        Here's the content after scrolling past the hero section. You can place
-        your text, images, or whatever here.
-      </p>
-      <p>Keep scrolling for more sections...</p>
+        <div class="w-full md:w-1/2 lg:w-[45%] flex justify-start">
+          <img
+            src="assets/pict.png"
+            class="w-full h-auto max-h-[70vh] md:max-h-[90vh] object-contain ml-0 md:-ml-30"
+            alt="Pict"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="relative -mt-20 -mb-20 z-20">
+      <img
+        src="assets/teared-one-side-paper.webp"
+        class="w-full h-45 object-cover md:object-fill"
+      />
+    </section>
+    <section class="h-[50vh]">
+      <div class="flex justify-center mt-10">
+        <img src="assets/angel-devil.png" class="w-[450px]" />
+      </div>
+    </section>
+    <section class="relative z-20 -my-10">
+      <img
+        src="assets/planes-side.png"
+        class="w-full object-cover md:object-fill h-30 md:h-auto"
+      />
+    </section>
+    <section class="h-auto pb-20 scroll-mt-35" id="playlist">
+      <div class="flex justify-center mt-20 mb-20 md:mb-0">
+        <img src="assets/fly-list.svg" class="w-[340px] md:w-[400px]" />
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center md:mt-10 p-5"
+      >
+        <div
+          class="order-3 md:order-1 text-right space-y-2 mt-10 md:mt-0 -mr-20 md:mr-0"
+        >
+          <wired-button class="text-xl md:text-2xl block">Pilot</wired-button>
+          <wired-button class="text-xl md:text-2xl block"
+            >Hara-fun</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            >Emergency Dream</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            >Badut Cadangan</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            ><span class="line-through">Rahwana</span> Lost</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            >Setan~Malaikat</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            >Reinkarnasi</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            >Strong to Survive</wired-button
+          >
+          <wired-button class="text-xl md:text-2xl block"
+            >Sintasium</wired-button
+          >
+        </div>
+
+        <div
+          class="order-2 md:order-2 flex justify-center items-center mx-5 my-5 md:my-0"
+        >
+          <img src="assets/plane.png" class="w-10 h-10 md:w-10 md:h-10" />
+        </div>
+
+        <div class="order-1 md:order-3 space-y-2 mb-5 md:mb-0 -ml-20 md:ml-0">
+          <wired-button
+            class="text-2xl md:text-4xl block bg-primary"
+            elevation="3"
+            >Now Streaming</wired-button
+          >
+          <wired-button class="text-xl md:text-3xl block" elevation="2"
+            >Spotify</wired-button
+          >
+          <wired-button class="text-xl md:text-3xl block" elevation="2"
+            >Youtube Music</wired-button
+          >
+          <wired-button class="text-xl md:text-3xl block" elevation="2"
+            >Apple Music</wired-button
+          >
+        </div>
+      </div>
+    </section>
+    <section class="relative z-20 -my-10">
+      <img
+        src="assets/teared-paper-orange-bottom.png"
+        class="w-full object-cover md:object-fill h-30 md:h-auto"
+      />
+    </section>
+    <section class="z-10 bg-primary pt-20 pb-40">
+      thanks text, logo, record logo, staring, email, contact person
     </section>
   </body>
 
