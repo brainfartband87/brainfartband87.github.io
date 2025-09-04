@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brainfart - Bravo-Foxtrot-101</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="styles.css" rel="stylesheet" />
     <style type="text/tailwindcss">
@@ -15,7 +33,7 @@
       }
     </style>
   </head>
-  <body class="m-0 font-sans">
+  <body class="m-0 font-sans" id="content">
     <section
       class="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center -mt-4"
       style="background-image: url('assets/paper.png')"
@@ -98,15 +116,15 @@
           class="h-full md:w-1/2 lg:w-[45%] flex justify-center md:justify-end"
         >
           <img
-            src="assets/sketch-hand-work.svg"
-            class="w-[150%] md:w-[120%] max-w-none h-auto object-contain -mr-30 md:-mr-25"
+            src="assets/hand-sketch.png"
+            class="w-[165%] md:w-[120%] max-w-none h-auto object-contain -mr-55 md:-mr-25"
             alt="Sketch Hand Work"
           />
         </div>
 
         <div class="w-full md:w-1/2 lg:w-[45%] flex justify-start">
           <img
-            src="assets/pict.png"
+            src="assets/group-pict.png"
             class="w-full h-auto max-h-[70vh] md:max-h-[90vh] object-contain ml-0 md:-ml-30"
             alt="Pict"
           />
@@ -131,68 +149,90 @@
       />
     </section>
     <section class="h-auto pb-20 scroll-mt-35" id="playlist">
-      <div class="flex justify-center mt-20 mb-20 md:mb-0">
-        <img src="assets/fly-list.svg" class="w-[340px] md:w-[400px]" />
-      </div>
-      <div
-        class="flex flex-col md:flex-row justify-center items-center md:mt-10 p-5"
-      >
-        <div
-          class="order-3 md:order-1 text-right space-y-2 mt-10 md:mt-0 -mr-20 md:mr-0"
-        >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Pilot</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Hara-fun</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Emergency Dream</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Badut Cadangan</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case"
-              ><span class="line-through">Rahwana</span> Lost</span
-            ></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Setan~Malaikat</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Reinkarnasi</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Strong to Survive</span></wired-button
-          >
-          <wired-button class="text-xl md:text-2xl block font-monocode"
-            ><span class="normal-case">Sintasium</span></wired-button
-          >
+      <div>
+        <div class="flex justify-center mt-20 mb-20 md:mb-0">
+          <img src="assets/fly-list.svg" class="w-[340px] md:w-[400px]" />
         </div>
-
         <div
-          class="order-2 md:order-2 flex justify-center items-center mx-5 my-5 md:my-0"
+          class="flex flex-col md:flex-row justify-center items-center md:mt-10 p-5"
         >
-          <img src="assets/plane.png" class="w-10 h-10 md:w-10 md:h-10" />
-        </div>
+          <div
+            class="order-3 md:order-1 text-right space-y-2 mt-10 md:mt-0 -mr-20 md:mr-0"
+          >
+            <a href="lyrics/pilot.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Pilot</span></wired-button
+              >
+            </a>
+            <a href="lyrics/hara-fun.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Hara-fun</span></wired-button
+              ></a
+            >
+            <a href="lyrics/emergency-dream.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Emergency Dream</span></wired-button
+              >
+            </a>
+            <a href="lyrics/badut-cadangan.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Badut Cadangan</span></wired-button
+              >
+            </a>
+            <a href="lyrics/lost.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case"
+                  ><span class="line-through">Rahwana</span> Lost</span
+                ></wired-button
+              >
+            </a>
+            <a href="lyrics/setan-malaikat.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Setan~Malaikat</span></wired-button
+              >
+            </a>
+            <a href="lyrics/reinkarnasi.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Reinkarnasi</span></wired-button
+              >
+            </a>
+            <a href="lyrics/strong-to-survive.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case"
+                  >Strong to Survive</span
+                ></wired-button
+              >
+            </a>
+            <a href="lyrics/sintasium.html">
+              <wired-button class="text-xl md:text-2xl block font-monocode"
+                ><span class="normal-case">Sintasium</span></wired-button
+              >
+            </a>
+          </div>
 
-        <div class="order-1 md:order-3 space-y-2 mb-5 md:mb-0 -ml-20 md:ml-0">
-          <wired-button
-            class="text-2xl md:text-4xl block bg-primary"
-            elevation="3"
-            disabled
-            >Now Streaming</wired-button
+          <div
+            class="order-2 md:order-2 flex justify-center items-center mx-5 my-5 md:my-0"
           >
-          <wired-button class="text-xl md:text-3xl block" elevation="2"
-            ><span class="normal-case">Spotify</span></wired-button
-          >
-          <wired-button class="text-xl md:text-3xl block" elevation="2"
-            ><span class="normal-case">Youtube Music</span></wired-button
-          >
-          <wired-button class="text-xl md:text-3xl block" elevation="2"
-            ><span class="normal-case">Apple Music</span></wired-button
-          >
+            <img src="assets/plane.png" class="w-10 h-10 md:w-10 md:h-10" />
+          </div>
+
+          <div class="order-1 md:order-3 space-y-2 mb-5 md:mb-0 -ml-20 md:ml-0">
+            <wired-button
+              class="text-2xl md:text-4xl block bg-primary"
+              elevation="3"
+              disabled
+              >Now Streaming</wired-button
+            >
+            <wired-button class="text-xl md:text-3xl block" elevation="2"
+              ><span class="normal-case">Spotify</span></wired-button
+            >
+            <wired-button class="text-xl md:text-3xl block" elevation="2"
+              ><span class="normal-case">Youtube Music</span></wired-button
+            >
+            <wired-button class="text-xl md:text-3xl block" elevation="2"
+              ><span class="normal-case">Apple Music</span></wired-button
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -205,22 +245,30 @@
     <section class="z-10 bg-primary pt-5 pb-10">
       <div class="flex justify-center mb-10">
         <div class="w-[90vw] flex flex-col space-y-6">
-          <div class="text-center font-monocode">
+          <div class="text-center font-monocode text-xl">
             <div>Starring</div>
             <p>AGJ | DXC</p>
           </div>
 
           <div class="text-center flex flex-col space-y-0">
-            <div>em: brainfartband87@gmail.com</div>
-            <div>yt: brainfartband</div>
-            <div>ig: brainfart_band</div>
+            <a class="underline" href="mailto:brainfartband87@gmail.com"
+              >em: brainfartband87@gmail.com</a
+            >
+            <a class="underline" href="https://www.youtube.com/@brainfartband"
+              >yt: brainfartband</a
+            >
+            <a
+              class="underline"
+              href="https://www.instagram.com/brainfart_band?igsh=d3R4NGdmampvejV1"
+              >ig: brainfart_band</a
+            >
           </div>
         </div>
       </div>
       <div class="flex justify-center">
         <div class="flex space-x-5">
           <div class="flex items-center space-x-2">
-            [LOGO]<span>BRAINFART</span>
+            <img src="assets/logo.png" class="h-7" /><span>BRAINFART</span>
           </div>
         </div>
       </div>
@@ -237,5 +285,18 @@
     </section>
   </body>
 
-  <script type="module" src="https://unpkg.com/wired-elements?module"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/wired-elements/lib/wired-divider.js?module"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/wired-elements/lib/wired-button.js?module"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/wired-elements/lib/wired-dialog.js?module"
+  ></script>
+
+  <script src="script.js" type="text/javascript"></script>
 </html>
