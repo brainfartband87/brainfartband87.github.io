@@ -117,7 +117,7 @@
         >
           <img
             src="assets/hand-sketch.png"
-            class="w-[165%] md:w-[120%] max-w-none h-auto object-contain -mr-55 md:-mr-25"
+            class="w-[165%] md:w-[120%] max-w-none h-auto object-contain -mr-55 md:"
             alt="Sketch Hand Work"
           />
         </div>
@@ -151,60 +151,63 @@
     <section class="h-auto pb-20 scroll-mt-35" id="playlist">
       <div>
         <div class="flex justify-center mt-20 mb-20 md:mb-0">
-          <img src="assets/fly-list.svg" class="w-[340px] md:w-[400px]" />
+          <div>
+            <img src="assets/fly-list.svg" class="w-[340px] md:w-[400px]" />
+          </div>
         </div>
         <div
           class="flex flex-col md:flex-row justify-center items-center md:mt-10 p-5"
         >
           <div
-            class="order-3 md:order-1 text-right space-y-2 mt-10 md:mt-0 -mr-20 md:mr-0"
+            class="flex flex-col order-3 md:order-1 text-right space-y-2 mt-10 md:mt-0 -mr-20 md:mr-0"
           >
+            <span class="italic">click to preview out song lyrics</span>
             <a href="lyrics/pilot.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Pilot</span></wired-button
               >
             </a>
             <a href="lyrics/hara-fun.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Hara-fun</span></wired-button
               ></a
             >
             <a href="lyrics/emergency-dream.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Emergency Dream</span></wired-button
               >
             </a>
             <a href="lyrics/badut-cadangan.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Badut Cadangan</span></wired-button
               >
             </a>
             <a href="lyrics/lost.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case"
                   ><span class="line-through">Rahwana</span> Lost</span
                 ></wired-button
               >
             </a>
             <a href="lyrics/setan-malaikat.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Setan~Malaikat</span></wired-button
               >
             </a>
             <a href="lyrics/reinkarnasi.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Reinkarnasi</span></wired-button
               >
             </a>
             <a href="lyrics/strong-to-survive.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case"
                   >Strong to Survive</span
                 ></wired-button
               >
             </a>
             <a href="lyrics/sintasium.html">
-              <wired-button class="text-xl md:text-2xl block font-monocode"
+              <wired-button class="text-xl md:text-2xl font-monocode"
                 ><span class="normal-case">Sintasium</span></wired-button
               >
             </a>
@@ -216,29 +219,37 @@
             <img src="assets/plane.png" class="w-10 h-10 md:w-10 md:h-10" />
           </div>
 
-          <div class="order-1 md:order-3 space-y-2 mb-5 md:mb-0 -ml-20 md:ml-0">
+          <div
+            class="order-1 md:order-3 space-y-2 mb-5 md:mb-0 -ml-20 md:ml-0 flex flex-col"
+          >
             <wired-button
-              class="text-2xl md:text-4xl block bg-primary"
+              class="text-2xl md:text-4xl bg-primary"
               elevation="3"
               disabled
               >Now Streaming</wired-button
             >
-            <wired-button class="text-xl md:text-3xl block" elevation="2"
+            <wired-button
+              class="text-xl md:text-3xl hover:scale-110 transition-all"
+              elevation="2"
               ><span class="normal-case">Spotify</span></wired-button
             >
-            <wired-button class="text-xl md:text-3xl block" elevation="2"
+            <wired-button
+              class="text-xl md:text-3xl hover:scale-110 transition-all"
+              elevation="2"
               ><span class="normal-case">Youtube Music</span></wired-button
             >
-            <wired-button class="text-xl md:text-3xl block" elevation="2"
+            <wired-button
+              class="text-xl md:text-3xl hover:scale-110 transition-all"
+              elevation="2"
               ><span class="normal-case">Apple Music</span></wired-button
             >
           </div>
         </div>
       </div>
     </section>
-    <section class="relative z-20 -mb-10">
+    <section class="relative z-20 -mt-8">
       <img
-        src="assets/teared-paper-orange-bottom.png"
+        src="assets/teared-paper-orange-bottom.webp"
         class="w-full object-cover md:object-fill h-30 md:h-auto"
       />
     </section>
